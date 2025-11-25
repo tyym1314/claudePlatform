@@ -139,6 +139,30 @@ const routes: RouteRecordRaw[] = [
         name: 'TopicManage',
         component: () => import('@/views/content/TopicManage.vue'),
         meta: { title: '话题管理' }
+      },
+      {
+        path: 'statistics/dashboard',
+        name: 'DataDashboard',
+        component: () => import('@/views/statistics/Dashboard.vue'),
+        meta: { title: '数据看板' }
+      },
+      {
+        path: 'notification/push',
+        name: 'PushManage',
+        component: () => import('@/views/notification/PushManage.vue'),
+        meta: { title: '推送通知管理' }
+      },
+      {
+        path: 'report/manage',
+        name: 'ReportManage',
+        component: () => import('@/views/report/ReportManage.vue'),
+        meta: { title: '举报管理' }
+      },
+      {
+        path: 'config/level',
+        name: 'LevelConfig',
+        component: () => import('@/views/config/LevelConfig.vue'),
+        meta: { title: '等级配置' }
       }
     ]
   },
