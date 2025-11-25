@@ -14,8 +14,10 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/java/api': {
-        target: 'http://your-backend-server.com',
-        changeOrigin: true
+        target: 'https://similar-dev.zykjnow.com',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/java\/api/, '/java/api')
       }
     }
   }
