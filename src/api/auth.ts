@@ -4,7 +4,7 @@ import type { LoginParams, UserInfo } from '@/types/user'
 // Login
 export function login(data: LoginParams) {
   return request({
-    url: '/backend/sysUser/login',
+    url: '/business/platform/login/login',
     method: 'post',
     data
   })
