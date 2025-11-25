@@ -4,7 +4,7 @@ import type { LoginParams, UserInfo } from '@/types/user'
 // Login
 export function login(data: LoginParams) {
   return request({
-    url: '/api/backend/sysUser/login',
+    url: '/backend/sysUser/login',
     method: 'post',
     data
   })
@@ -13,7 +13,7 @@ export function login(data: LoginParams) {
 // Get user info
 export function getUserInfo(data: { userId: number }) {
   return request<UserInfo>({
-    url: '/api/backend/sysUser/userInfo',
+    url: '/backend/sysUser/userInfo',
     method: 'post',
     data
   })
@@ -22,7 +22,7 @@ export function getUserInfo(data: { userId: number }) {
 // Get user menu info
 export function getMenuInfo(data: { userId: number }) {
   return request({
-    url: '/api/backend/sysUser/getMenuInfo',
+    url: '/backend/sysUser/getMenuInfo',
     method: 'post',
     data
   })
@@ -31,7 +31,7 @@ export function getMenuInfo(data: { userId: number }) {
 // Logout
 export function logout() {
   return request({
-    url: '/api/backend/sysUser/logout',
+    url: '/backend/sysUser/logout',
     method: 'post'
   })
 }

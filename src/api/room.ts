@@ -12,7 +12,7 @@ export function getRoomList(data: {
   status?: number
 }) {
   return request({
-    url: '/api/business/backend/room/getRoomList',
+    url: '/business/backend/room/getRoomList',
     method: 'post',
     data
   })
@@ -21,7 +21,7 @@ export function getRoomList(data: {
 // Get room detail
 export function getRoomDetail(params: { roomId: number }) {
   return request({
-    url: '/api/business/backend/room/getRoomDetail',
+    url: '/business/backend/room/getRoomDetail',
     method: 'get',
     params
   })
@@ -30,7 +30,7 @@ export function getRoomDetail(params: { roomId: number }) {
 // Close room
 export function closeRoom(data: { roomId: number; reason?: string }) {
   return request({
-    url: '/api/business/backend/room/closeRoom',
+    url: '/business/backend/room/closeRoom',
     method: 'post',
     data
   })
@@ -39,7 +39,7 @@ export function closeRoom(data: { roomId: number; reason?: string }) {
 // Open room
 export function openRoom(data: { roomId: number }) {
   return request({
-    url: '/api/business/backend/room/openRoom',
+    url: '/business/backend/room/openRoom',
     method: 'post',
     data
   })
@@ -53,7 +53,7 @@ export function updateRoomInfo(data: {
   description?: string
 }) {
   return request({
-    url: '/api/business/backend/room/updateRoomInfo',
+    url: '/business/backend/room/updateRoomInfo',
     method: 'post',
     data
   })
@@ -73,7 +73,7 @@ export function getRoomStatistics(data: {
   sortOrder?: string
 }) {
   return request({
-    url: '/api/business/backend/room/getRoomStatistics',
+    url: '/business/backend/room/getRoomStatistics',
     method: 'post',
     data
   })
@@ -85,7 +85,7 @@ export function getRoomStatisticsDetail(params: {
   date: string
 }) {
   return request({
-    url: '/api/business/backend/room/getRoomStatisticsDetail',
+    url: '/business/backend/room/getRoomStatisticsDetail',
     method: 'get',
     params
   })
@@ -99,7 +99,7 @@ export function exportRoomStatistics(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/room/exportRoomStatistics',
+    url: '/business/backend/room/exportRoomStatistics',
     method: 'post',
     data,
     responseType: 'blob'
@@ -113,7 +113,7 @@ export function getRoomIncomeRanking(data: {
   limit?: number
 }) {
   return request({
-    url: '/api/business/backend/room/getRoomIncomeRanking',
+    url: '/business/backend/room/getRoomIncomeRanking',
     method: 'post',
     data
   })
@@ -126,7 +126,7 @@ export function getRoomDurationRanking(data: {
   limit?: number
 }) {
   return request({
-    url: '/api/business/backend/room/getRoomDurationRanking',
+    url: '/business/backend/room/getRoomDurationRanking',
     method: 'post',
     data
   })

@@ -5,7 +5,7 @@ import request from '@/utils/request'
 // Get banner list
 export function getBannerList(data: { pageNo: number; pageSize: number; status?: number }) {
   return request({
-    url: '/api/business/cms/backend/banner/getBannerList',
+    url: '/business/cms/backend/banner/getBannerList',
     method: 'post',
     data
   })
@@ -14,7 +14,7 @@ export function getBannerList(data: { pageNo: number; pageSize: number; status?:
 // Add banner
 export function addBanner(data: any) {
   return request({
-    url: '/api/business/cms/backend/banner/addBanner',
+    url: '/business/cms/backend/banner/addBanner',
     method: 'post',
     data
   })
@@ -23,7 +23,7 @@ export function addBanner(data: any) {
 // Update banner
 export function updateBanner(data: any) {
   return request({
-    url: '/api/business/cms/backend/banner/updateBanner',
+    url: '/business/cms/backend/banner/updateBanner',
     method: 'post',
     data
   })
@@ -32,7 +32,7 @@ export function updateBanner(data: any) {
 // Set banner status
 export function setBannerStatus(data: { id: number; status: number }) {
   return request({
-    url: '/api/business/cms/backend/banner/setBannerStatus',
+    url: '/business/cms/backend/banner/setBannerStatus',
     method: 'post',
     data
   })
@@ -41,7 +41,7 @@ export function setBannerStatus(data: { id: number; status: number }) {
 // Delete banner
 export function deleteBanner(data: { id: number }) {
   return request({
-    url: '/api/business/cms/backend/banner/delBanner',
+    url: '/business/cms/backend/banner/delBanner',
     method: 'post',
     data
   })
@@ -52,7 +52,7 @@ export function deleteBanner(data: { id: number }) {
 // Get lucky gift config list
 export function getLuckyGiftList(data: { pageNo: number; pageSize: number }) {
   return request({
-    url: '/api/business/cms/backend/luckyGift/getGiftConfigList',
+    url: '/business/cms/backend/luckyGift/getGiftConfigList',
     method: 'post',
     data
   })
@@ -61,7 +61,7 @@ export function getLuckyGiftList(data: { pageNo: number; pageSize: number }) {
 // Add lucky gift config
 export function addLuckyGift(data: { giftId: number; probability: number }) {
   return request({
-    url: '/api/business/cms/backend/luckyGift/addGiftConfig',
+    url: '/business/cms/backend/luckyGift/addGiftConfig',
     method: 'post',
     data
   })
@@ -70,7 +70,7 @@ export function addLuckyGift(data: { giftId: number; probability: number }) {
 // Delete lucky gift config
 export function deleteLuckyGift(data: { id: number }) {
   return request({
-    url: '/api/business/cms/backend/luckyGift/delGiftConfig',
+    url: '/business/cms/backend/luckyGift/delGiftConfig',
     method: 'post',
     data
   })
@@ -79,7 +79,7 @@ export function deleteLuckyGift(data: { id: number }) {
 // Get lucky gift pool config
 export function getLuckyGiftPoolConfig() {
   return request({
-    url: '/api/business/cms/backend/luckyGift/getLuckyGiftPoolConfig',
+    url: '/business/cms/backend/luckyGift/getLuckyGiftPoolConfig',
     method: 'get'
   })
 }
@@ -87,7 +87,7 @@ export function getLuckyGiftPoolConfig() {
 // Set lucky gift pool config
 export function setLuckyGiftPoolConfig(data: { coefficient: number }) {
   return request({
-    url: '/api/business/cms/backend/luckyGift/setLuckyGiftPoolConfig',
+    url: '/business/cms/backend/luckyGift/setLuckyGiftPoolConfig',
     method: 'post',
     data
   })
@@ -96,7 +96,7 @@ export function setLuckyGiftPoolConfig(data: { coefficient: number }) {
 // Query gift info
 export function queryGift(params: { giftId: number }) {
   return request({
-    url: '/api/business/cms/backend/luckyGift/queryGift',
+    url: '/business/cms/backend/luckyGift/queryGift',
     method: 'get',
     params
   })
@@ -107,7 +107,7 @@ export function queryGift(params: { giftId: number }) {
 // Get quick gift info
 export function getQuickGiftInfo() {
   return request({
-    url: '/api/business/backend/room-convenient-gift/getShortCutGiftInfo',
+    url: '/business/backend/room-convenient-gift/getShortCutGiftInfo',
     method: 'get'
   })
 }
@@ -115,7 +115,7 @@ export function getQuickGiftInfo() {
 // Add quick gift
 export function addQuickGift(data: { giftId: number; position: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/addShortCutGiftInfo',
+    url: '/business/backend/room-convenient-gift/addShortCutGiftInfo',
     method: 'post',
     data
   })
@@ -124,7 +124,7 @@ export function addQuickGift(data: { giftId: number; position: number }) {
 // Update quick gift
 export function updateQuickGift(data: { id: number; giftId: number; position: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/updateShortCutGiftInfo',
+    url: '/business/backend/room-convenient-gift/updateShortCutGiftInfo',
     method: 'post',
     data
   })
@@ -133,7 +133,7 @@ export function updateQuickGift(data: { id: number; giftId: number; position: nu
 // Delete quick gift
 export function deleteQuickGift(data: { id: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/deleteShortCutGiftInfo',
+    url: '/business/backend/room-convenient-gift/deleteShortCutGiftInfo',
     method: 'post',
     data
   })
@@ -142,7 +142,7 @@ export function deleteQuickGift(data: { id: number }) {
 // Enable/Disable quick gift
 export function enableQuickGift(data: { id: number; status: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/enableShortCutGiftInfo',
+    url: '/business/backend/room-convenient-gift/enableShortCutGiftInfo',
     method: 'post',
     data
   })
@@ -153,7 +153,7 @@ export function enableQuickGift(data: { id: number; status: number }) {
 // Get low price gift info
 export function getLowPriceGiftInfo() {
   return request({
-    url: '/api/business/backend/room-convenient-gift/getLowPriceGiftInfo',
+    url: '/business/backend/room-convenient-gift/getLowPriceGiftInfo',
     method: 'get'
   })
 }
@@ -161,7 +161,7 @@ export function getLowPriceGiftInfo() {
 // Add low price gift
 export function addLowPriceGift(data: { giftId: number; position: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/addLowPriceGiftInfo',
+    url: '/business/backend/room-convenient-gift/addLowPriceGiftInfo',
     method: 'post',
     data
   })
@@ -170,7 +170,7 @@ export function addLowPriceGift(data: { giftId: number; position: number }) {
 // Update low price gift
 export function updateLowPriceGift(data: { id: number; giftId: number; position: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/updateLowPriceGiftInfo',
+    url: '/business/backend/room-convenient-gift/updateLowPriceGiftInfo',
     method: 'post',
     data
   })
@@ -179,7 +179,7 @@ export function updateLowPriceGift(data: { id: number; giftId: number; position:
 // Delete low price gift
 export function deleteLowPriceGift(data: { id: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/deleteLowPriceGiftInfo',
+    url: '/business/backend/room-convenient-gift/deleteLowPriceGiftInfo',
     method: 'post',
     data
   })
@@ -188,7 +188,7 @@ export function deleteLowPriceGift(data: { id: number }) {
 // Enable/Disable low price gift
 export function enableLowPriceGift(data: { id: number; status: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/enableLowPriceGiftInfo',
+    url: '/business/backend/room-convenient-gift/enableLowPriceGiftInfo',
     method: 'post',
     data
   })
@@ -197,7 +197,7 @@ export function enableLowPriceGift(data: { id: number; status: number }) {
 // Get gift info by id
 export function getGiftInfoById(params: { giftId: number }) {
   return request({
-    url: '/api/business/backend/room-convenient-gift/getGiftInfoById',
+    url: '/business/backend/room-convenient-gift/getGiftInfoById',
     method: 'get',
     params
   })
@@ -208,7 +208,7 @@ export function getGiftInfoById(params: { giftId: number }) {
 // Get gift pack list
 export function getGiftPackList(params: { pageNo: number; pageSize: number }) {
   return request({
-    url: '/api/business/backend/gift-pack/getGiftPack',
+    url: '/business/backend/gift-pack/getGiftPack',
     method: 'get',
     params
   })
@@ -217,7 +217,7 @@ export function getGiftPackList(params: { pageNo: number; pageSize: number }) {
 // Add gift pack
 export function addGiftPack(data: any) {
   return request({
-    url: '/api/business/backend/gift-pack/addGiftPack',
+    url: '/business/backend/gift-pack/addGiftPack',
     method: 'post',
     data
   })
@@ -226,7 +226,7 @@ export function addGiftPack(data: any) {
 // Update gift pack
 export function updateGiftPack(data: any) {
   return request({
-    url: '/api/business/backend/gift-pack/updateGiftPack',
+    url: '/business/backend/gift-pack/updateGiftPack',
     method: 'post',
     data
   })
@@ -235,7 +235,7 @@ export function updateGiftPack(data: any) {
 // Delete gift pack
 export function deleteGiftPack(data: { id: string }) {
   return request({
-    url: '/api/business/backend/gift-pack/deleteGiftPack',
+    url: '/business/backend/gift-pack/deleteGiftPack',
     method: 'post',
     data
   })
@@ -244,7 +244,7 @@ export function deleteGiftPack(data: { id: string }) {
 // Get gift item type list
 export function getGiftItemTypeList() {
   return request({
-    url: '/api/business/backend/gift-pack/getGiftItemTypeList',
+    url: '/business/backend/gift-pack/getGiftItemTypeList',
     method: 'get'
   })
 }
@@ -252,7 +252,7 @@ export function getGiftItemTypeList() {
 // Get gift item info
 export function getGiftItemInfo(params: { itemType: string; itemId: number }) {
   return request({
-    url: '/api/business/backend/gift-pack/getGiftItemInfo',
+    url: '/business/backend/gift-pack/getGiftItemInfo',
     method: 'get',
     params
   })
@@ -261,7 +261,7 @@ export function getGiftItemInfo(params: { itemType: string; itemId: number }) {
 // Get gift pack base info list
 export function getGiftPackBaseInfoList(data: any) {
   return request({
-    url: '/api/business/backend/gift-pack/getGiftPackBaseInfoList',
+    url: '/business/backend/gift-pack/getGiftPackBaseInfoList',
     method: 'post',
     data
   })
@@ -272,7 +272,7 @@ export function getGiftPackBaseInfoList(data: any) {
 // Upload static resource
 export function uploadStaticResource(formData: FormData) {
   return request({
-    url: '/api/backend/upload/static-resource',
+    url: '/backend/upload/static-resource',
     method: 'post',
     data: formData,
     headers: { 'Content-Type': 'multipart/form-data' }

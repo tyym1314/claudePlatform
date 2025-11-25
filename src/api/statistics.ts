@@ -8,7 +8,7 @@ export function getOverviewStatistics(params?: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/statistics/getOverviewStatistics',
+    url: '/business/backend/statistics/getOverviewStatistics',
     method: 'get',
     params
   })
@@ -21,7 +21,7 @@ export function getUserStatistics(params: {
   dimension?: string
 }) {
   return request({
-    url: '/api/business/backend/statistics/getUserStatistics',
+    url: '/business/backend/statistics/getUserStatistics',
     method: 'get',
     params
   })
@@ -34,7 +34,7 @@ export function getRevenueStatistics(params: {
   dimension?: string
 }) {
   return request({
-    url: '/api/business/backend/statistics/getRevenueStatistics',
+    url: '/business/backend/statistics/getRevenueStatistics',
     method: 'get',
     params
   })
@@ -46,7 +46,7 @@ export function getRoomStatisticsSummary(params: {
   endTime: string
 }) {
   return request({
-    url: '/api/business/backend/statistics/getRoomStatistics',
+    url: '/business/backend/statistics/getRoomStatistics',
     method: 'get',
     params
   })
@@ -59,7 +59,7 @@ export function getGiftStatistics(params: {
   topN?: number
 }) {
   return request({
-    url: '/api/business/backend/statistics/getGiftStatistics',
+    url: '/business/backend/statistics/getGiftStatistics',
     method: 'get',
     params
   })
@@ -71,7 +71,7 @@ export function getRetentionStatistics(params: {
   days?: number
 }) {
   return request({
-    url: '/api/business/backend/statistics/getRetentionStatistics',
+    url: '/business/backend/statistics/getRetentionStatistics',
     method: 'get',
     params
   })
@@ -80,7 +80,7 @@ export function getRetentionStatistics(params: {
 // Get real-time statistics
 export function getRealTimeStatistics() {
   return request({
-    url: '/api/business/backend/statistics/getRealTimeStatistics',
+    url: '/business/backend/statistics/getRealTimeStatistics',
     method: 'get'
   })
 }
@@ -97,7 +97,7 @@ export function getReportList(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/report/getReportList',
+    url: '/business/backend/report/getReportList',
     method: 'post',
     data
   })
@@ -106,7 +106,7 @@ export function getReportList(data: {
 // Get report detail
 export function getReportDetail(params: { reportId: number }) {
   return request({
-    url: '/api/business/backend/report/getReportDetail',
+    url: '/business/backend/report/getReportDetail',
     method: 'get',
     params
   })
@@ -119,7 +119,7 @@ export function handleReport(data: {
   remark?: string
 }) {
   return request({
-    url: '/api/business/backend/report/handleReport',
+    url: '/business/backend/report/handleReport',
     method: 'post',
     data
   })
@@ -132,7 +132,7 @@ export function batchHandleReports(data: {
   remark?: string
 }) {
   return request({
-    url: '/api/business/backend/report/batchHandleReports',
+    url: '/business/backend/report/batchHandleReports',
     method: 'post',
     data
   })
@@ -146,7 +146,7 @@ export function exportReportData(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/report/exportReportData',
+    url: '/business/backend/report/exportReportData',
     method: 'post',
     data,
     responseType: 'blob'

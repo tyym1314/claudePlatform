@@ -8,7 +8,7 @@ export function getGiftWallList(data: {
   pageSize: number
 }) {
   return request({
-    url: '/api/business/backend/gift-wall/getGiftWallList',
+    url: '/business/backend/gift-wall/getGiftWallList',
     method: 'post',
     data
   })
@@ -23,7 +23,7 @@ export function addGiftWall(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/gift-wall/addGiftWall',
+    url: '/business/backend/gift-wall/addGiftWall',
     method: 'post',
     data
   })
@@ -39,7 +39,7 @@ export function updateGiftWall(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/gift-wall/updateGiftWall',
+    url: '/business/backend/gift-wall/updateGiftWall',
     method: 'post',
     data
   })
@@ -48,7 +48,7 @@ export function updateGiftWall(data: {
 // Delete gift wall config
 export function deleteGiftWall(data: { id: number }) {
   return request({
-    url: '/api/business/backend/gift-wall/deleteGiftWall',
+    url: '/business/backend/gift-wall/deleteGiftWall',
     method: 'post',
     data
   })
@@ -60,7 +60,7 @@ export function setGiftWallStatus(data: {
   status: number
 }) {
   return request({
-    url: '/api/business/backend/gift-wall/setGiftWallStatus',
+    url: '/business/backend/gift-wall/setGiftWallStatus',
     method: 'post',
     data
   })
@@ -76,7 +76,7 @@ export function getTagList(data: {
   tagType?: number
 }) {
   return request({
-    url: '/api/business/backend/tag/getTagList',
+    url: '/business/backend/tag/getTagList',
     method: 'post',
     data
   })
@@ -91,7 +91,7 @@ export function addTag(data: {
   sort?: number
 }) {
   return request({
-    url: '/api/business/backend/tag/addTag',
+    url: '/business/backend/tag/addTag',
     method: 'post',
     data
   })
@@ -107,7 +107,7 @@ export function updateTag(data: {
   sort?: number
 }) {
   return request({
-    url: '/api/business/backend/tag/updateTag',
+    url: '/business/backend/tag/updateTag',
     method: 'post',
     data
   })
@@ -116,7 +116,7 @@ export function updateTag(data: {
 // Delete tag
 export function deleteTag(data: { id: number }) {
   return request({
-    url: '/api/business/backend/tag/deleteTag',
+    url: '/business/backend/tag/deleteTag',
     method: 'post',
     data
   })
@@ -128,7 +128,7 @@ export function setTagStatus(data: {
   status: number
 }) {
   return request({
-    url: '/api/business/backend/tag/setTagStatus',
+    url: '/business/backend/tag/setTagStatus',
     method: 'post',
     data
   })
@@ -144,7 +144,7 @@ export function getTopicList(data: {
   status?: number
 }) {
   return request({
-    url: '/api/business/backend/topic/getTopicList',
+    url: '/business/backend/topic/getTopicList',
     method: 'post',
     data
   })
@@ -158,7 +158,7 @@ export function addTopic(data: {
   sort?: number
 }) {
   return request({
-    url: '/api/business/backend/topic/addTopic',
+    url: '/business/backend/topic/addTopic',
     method: 'post',
     data
   })
@@ -173,7 +173,7 @@ export function updateTopic(data: {
   sort?: number
 }) {
   return request({
-    url: '/api/business/backend/topic/updateTopic',
+    url: '/business/backend/topic/updateTopic',
     method: 'post',
     data
   })
@@ -182,7 +182,7 @@ export function updateTopic(data: {
 // Delete topic
 export function deleteTopic(data: { id: number }) {
   return request({
-    url: '/api/business/backend/topic/deleteTopic',
+    url: '/business/backend/topic/deleteTopic',
     method: 'post',
     data
   })
@@ -194,7 +194,7 @@ export function setTopicStatus(data: {
   status: number
 }) {
   return request({
-    url: '/api/business/backend/topic/setTopicStatus',
+    url: '/business/backend/topic/setTopicStatus',
     method: 'post',
     data
   })
@@ -203,7 +203,7 @@ export function setTopicStatus(data: {
 // Get topic statistics
 export function getTopicStatistics(params: { topicId: number }) {
   return request({
-    url: '/api/business/backend/topic/getTopicStatistics',
+    url: '/business/backend/topic/getTopicStatistics',
     method: 'get',
     params
   })

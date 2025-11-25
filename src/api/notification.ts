@@ -13,7 +13,7 @@ export function getNotificationList(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/notification/getNotificationList',
+    url: '/business/backend/notification/getNotificationList',
     method: 'post',
     data
   })
@@ -22,7 +22,7 @@ export function getNotificationList(data: {
 // Get notification detail
 export function getNotificationDetail(params: { notificationId: number }) {
   return request({
-    url: '/api/business/backend/notification/getNotificationDetail',
+    url: '/business/backend/notification/getNotificationDetail',
     method: 'get',
     params
   })
@@ -40,7 +40,7 @@ export function addNotification(data: {
   jumpUrl?: string
 }) {
   return request({
-    url: '/api/business/backend/notification/addNotification',
+    url: '/business/backend/notification/addNotification',
     method: 'post',
     data
   })
@@ -59,7 +59,7 @@ export function updateNotification(data: {
   jumpUrl?: string
 }) {
   return request({
-    url: '/api/business/backend/notification/updateNotification',
+    url: '/business/backend/notification/updateNotification',
     method: 'post',
     data
   })
@@ -68,7 +68,7 @@ export function updateNotification(data: {
 // Delete notification
 export function deleteNotification(data: { id: number }) {
   return request({
-    url: '/api/business/backend/notification/deleteNotification',
+    url: '/business/backend/notification/deleteNotification',
     method: 'post',
     data
   })
@@ -77,7 +77,7 @@ export function deleteNotification(data: { id: number }) {
 // Send notification immediately
 export function sendNotification(data: { id: number }) {
   return request({
-    url: '/api/business/backend/notification/sendNotification',
+    url: '/business/backend/notification/sendNotification',
     method: 'post',
     data
   })
@@ -86,7 +86,7 @@ export function sendNotification(data: { id: number }) {
 // Cancel scheduled notification
 export function cancelNotification(data: { id: number }) {
   return request({
-    url: '/api/business/backend/notification/cancelNotification',
+    url: '/business/backend/notification/cancelNotification',
     method: 'post',
     data
   })
@@ -95,7 +95,7 @@ export function cancelNotification(data: { id: number }) {
 // Get notification statistics
 export function getNotificationStatistics(params: { notificationId: number }) {
   return request({
-    url: '/api/business/backend/notification/getNotificationStatistics',
+    url: '/business/backend/notification/getNotificationStatistics',
     method: 'get',
     params
   })

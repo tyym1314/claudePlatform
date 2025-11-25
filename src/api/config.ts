@@ -5,7 +5,7 @@ import request from '@/utils/request'
 // Get level config list
 export function getLevelConfigList() {
   return request({
-    url: '/api/business/backend/config/getLevelConfigList',
+    url: '/business/backend/config/getLevelConfigList',
     method: 'get'
   })
 }
@@ -20,7 +20,7 @@ export function addLevelConfig(data: {
   privileges?: string[]
 }) {
   return request({
-    url: '/api/business/backend/config/addLevelConfig',
+    url: '/business/backend/config/addLevelConfig',
     method: 'post',
     data
   })
@@ -37,7 +37,7 @@ export function updateLevelConfig(data: {
   privileges?: string[]
 }) {
   return request({
-    url: '/api/business/backend/config/updateLevelConfig',
+    url: '/business/backend/config/updateLevelConfig',
     method: 'post',
     data
   })
@@ -46,7 +46,7 @@ export function updateLevelConfig(data: {
 // Delete level config
 export function deleteLevelConfig(data: { id: number }) {
   return request({
-    url: '/api/business/backend/config/deleteLevelConfig',
+    url: '/business/backend/config/deleteLevelConfig',
     method: 'post',
     data
   })

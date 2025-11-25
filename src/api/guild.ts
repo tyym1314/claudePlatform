@@ -10,7 +10,7 @@ export function getGuildList(data: {
   guildName?: string
 }) {
   return request({
-    url: '/api/business/backend/guild/getGuildList',
+    url: '/business/backend/guild/getGuildList',
     method: 'post',
     data
   })
@@ -19,7 +19,7 @@ export function getGuildList(data: {
 // Get guild detail
 export function getGuildDetail(params: { guildId: number }) {
   return request({
-    url: '/api/business/backend/guild/getGuildDetail',
+    url: '/business/backend/guild/getGuildDetail',
     method: 'get',
     params
   })
@@ -30,7 +30,7 @@ export function getGuildDetail(params: { guildId: number }) {
 // Get automatic salary config
 export function getAutoSalaryConfig() {
   return request({
-    url: '/api/business/backend/guild/getAutoSalaryConfig',
+    url: '/business/backend/guild/getAutoSalaryConfig',
     method: 'get'
   })
 }
@@ -42,7 +42,7 @@ export function setAutoSalaryConfig(data: {
   salaryRules?: any[]
 }) {
   return request({
-    url: '/api/business/backend/guild/setAutoSalaryConfig',
+    url: '/business/backend/guild/setAutoSalaryConfig',
     method: 'post',
     data
   })
@@ -51,7 +51,7 @@ export function setAutoSalaryConfig(data: {
 // Execute automatic salary calculation
 export function executeAutoSalary(data: { month: string }) {
   return request({
-    url: '/api/business/backend/guild/executeAutoSalary',
+    url: '/business/backend/guild/executeAutoSalary',
     method: 'post',
     data
   })
@@ -68,7 +68,7 @@ export function getSalaryRecordList(data: {
   userId?: number
 }) {
   return request({
-    url: '/api/business/backend/guild/getSalaryRecordList',
+    url: '/business/backend/guild/getSalaryRecordList',
     method: 'post',
     data
   })
@@ -77,7 +77,7 @@ export function getSalaryRecordList(data: {
 // Get salary record detail
 export function getSalaryRecordDetail(params: { recordId: number }) {
   return request({
-    url: '/api/business/backend/guild/getSalaryRecordDetail',
+    url: '/business/backend/guild/getSalaryRecordDetail',
     method: 'get',
     params
   })
@@ -89,7 +89,7 @@ export function exportSalaryRecords(data: {
   month?: string
 }) {
   return request({
-    url: '/api/business/backend/guild/exportSalaryRecords',
+    url: '/business/backend/guild/exportSalaryRecords',
     method: 'post',
     data,
     responseType: 'blob'
@@ -103,7 +103,7 @@ export function approveSalary(data: {
   remark?: string
 }) {
   return request({
-    url: '/api/business/backend/guild/approveSalary',
+    url: '/business/backend/guild/approveSalary',
     method: 'post',
     data
   })
@@ -116,7 +116,7 @@ export function batchApproveSalary(data: {
   remark?: string
 }) {
   return request({
-    url: '/api/business/backend/guild/batchApproveSalary',
+    url: '/business/backend/guild/batchApproveSalary',
     method: 'post',
     data
   })

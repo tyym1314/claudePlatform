@@ -13,11 +13,11 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/java/api': {
+      '/api': {
         target: 'https://similar-dev.zykjnow.com',
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace(/^\/java\/api/, '/halla-operation-manager-platform/java/api')
+        rewrite: (path) => path.replace(/^\/api/, '/halla-operation-manager-platform/api')
       }
     }
   }

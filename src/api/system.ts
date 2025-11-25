@@ -5,7 +5,7 @@ import request from '@/utils/request'
 // User page query
 export function getUserPage(data: { pageNo: number; pageSize: number; username?: string }) {
   return request({
-    url: '/api/backend/sysUser/userPage',
+    url: '/backend/sysUser/userPage',
     method: 'post',
     data
   })
@@ -14,7 +14,7 @@ export function getUserPage(data: { pageNo: number; pageSize: number; username?:
 // Add user
 export function addUser(data: any) {
   return request({
-    url: '/api/backend/sysUser/userAdd',
+    url: '/backend/sysUser/userAdd',
     method: 'post',
     data
   })
@@ -23,7 +23,7 @@ export function addUser(data: any) {
 // Update user
 export function updateUser(data: any) {
   return request({
-    url: '/api/backend/sysUser/userUpdate',
+    url: '/backend/sysUser/userUpdate',
     method: 'post',
     data
   })
@@ -32,7 +32,7 @@ export function updateUser(data: any) {
 // Delete user
 export function deleteUser(data: { userId: number }) {
   return request({
-    url: '/api/backend/sysUser/userDel',
+    url: '/backend/sysUser/userDel',
     method: 'post',
     data
   })
@@ -41,7 +41,7 @@ export function deleteUser(data: { userId: number }) {
 // Get user info
 export function getSysUserInfo(data: { userId: number }) {
   return request({
-    url: '/api/backend/sysUser/userInfo',
+    url: '/backend/sysUser/userInfo',
     method: 'post',
     data
   })
@@ -52,7 +52,7 @@ export function getSysUserInfo(data: { userId: number }) {
 // Role page query
 export function getRolePage(data: { pageNo: number; pageSize: number; roleName?: string }) {
   return request({
-    url: '/api/backend/sysRole/rolePage',
+    url: '/backend/sysRole/rolePage',
     method: 'post',
     data
   })
@@ -61,7 +61,7 @@ export function getRolePage(data: { pageNo: number; pageSize: number; roleName?:
 // Get all roles
 export function getAllRoles() {
   return request({
-    url: '/api/backend/sysRole/roleAllList',
+    url: '/backend/sysRole/roleAllList',
     method: 'get'
   })
 }
@@ -69,7 +69,7 @@ export function getAllRoles() {
 // Add role
 export function addRole(data: any) {
   return request({
-    url: '/api/backend/sysRole/roleAdd',
+    url: '/backend/sysRole/roleAdd',
     method: 'post',
     data
   })
@@ -78,7 +78,7 @@ export function addRole(data: any) {
 // Update role
 export function updateRole(data: any) {
   return request({
-    url: '/api/backend/sysRole/roleUpdate',
+    url: '/backend/sysRole/roleUpdate',
     method: 'post',
     data
   })
@@ -87,7 +87,7 @@ export function updateRole(data: any) {
 // Get role info
 export function getRoleInfo(data: { roleId: number }) {
   return request({
-    url: '/api/backend/sysRole/roleInfo',
+    url: '/backend/sysRole/roleInfo',
     method: 'post',
     data
   })
@@ -98,7 +98,7 @@ export function getRoleInfo(data: { roleId: number }) {
 // Get menu list
 export function getMenuList() {
   return request({
-    url: '/api/backend/sysMenu/menuList',
+    url: '/backend/sysMenu/menuList',
     method: 'get'
   })
 }
@@ -106,7 +106,7 @@ export function getMenuList() {
 // Add menu
 export function addMenu(data: any) {
   return request({
-    url: '/api/backend/sysMenu/menuAdd',
+    url: '/backend/sysMenu/menuAdd',
     method: 'post',
     data
   })
@@ -115,7 +115,7 @@ export function addMenu(data: any) {
 // Update menu
 export function updateMenu(data: any) {
   return request({
-    url: '/api/backend/sysMenu/menuUpdate',
+    url: '/backend/sysMenu/menuUpdate',
     method: 'post',
     data
   })
@@ -124,7 +124,7 @@ export function updateMenu(data: any) {
 // Delete menu
 export function deleteMenu(data: { menuId: number }) {
   return request({
-    url: '/api/backend/sysMenu/menuDel',
+    url: '/backend/sysMenu/menuDel',
     method: 'post',
     data
   })
@@ -133,7 +133,7 @@ export function deleteMenu(data: { menuId: number }) {
 // Get menu info
 export function getMenuInfo(data: { menuId: number }) {
   return request({
-    url: '/api/backend/sysMenu/menuInfo',
+    url: '/backend/sysMenu/menuInfo',
     method: 'post',
     data
   })

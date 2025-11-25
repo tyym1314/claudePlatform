@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // User list query
 export function getUserList(data: any) {
   return request({
-    url: '/api/backend/user/list',
+    url: '/backend/user/list',
     method: 'post',
     data
   })
@@ -18,7 +18,7 @@ export function updateDiamonds(data: {
   customerAmount: number
 }) {
   return request({
-    url: '/api/backend/user/update-diamonds',
+    url: '/backend/user/update-diamonds',
     method: 'post',
     data
   })
@@ -27,7 +27,7 @@ export function updateDiamonds(data: {
 // Batch add gold
 export function batchAddGold(formData: FormData) {
   return request({
-    url: '/api/backend/pay/batch-gold-add-by-excel',
+    url: '/backend/pay/batch-gold-add-by-excel',
     method: 'post',
     data: formData,
     headers: { 'Content-Type': 'multipart/form-data' }
@@ -37,7 +37,7 @@ export function batchAddGold(formData: FormData) {
 // Batch add diamond
 export function batchAddDiamond(formData: FormData) {
   return request({
-    url: '/api/backend/pay/batch-diamond-add-by-excel',
+    url: '/backend/pay/batch-diamond-add-by-excel',
     method: 'post',
     data: formData,
     headers: { 'Content-Type': 'multipart/form-data' }
@@ -53,7 +53,7 @@ export function getBalanceDetail(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/backend/pay/balance-detail',
+    url: '/backend/pay/balance-detail',
     method: 'post',
     data
   })
@@ -67,7 +67,7 @@ export function getGoldDetail(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/backend/pay/gold-detail',
+    url: '/backend/pay/gold-detail',
     method: 'post',
     data
   })
@@ -76,7 +76,7 @@ export function getGoldDetail(data: {
 // Add gold
 export function addGold(data: { userId: string; count: number }) {
   return request({
-    url: '/api/backend/pay/gold-add',
+    url: '/backend/pay/gold-add',
     method: 'post',
     data
   })
@@ -90,7 +90,7 @@ export function exportRecord(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/backend/pay/export-record',
+    url: '/backend/pay/export-record',
     method: 'post',
     data
   })
@@ -99,7 +99,7 @@ export function exportRecord(data: {
 // Update user level
 export function updateLevel(data: { userId: string; level: string }) {
   return request({
-    url: '/api/backend/user/update-level',
+    url: '/backend/user/update-level',
     method: 'post',
     data
   })
@@ -108,7 +108,7 @@ export function updateLevel(data: { userId: string; level: string }) {
 // BD update
 export function bdUpdate(data: { userId: string; opType: number }) {
   return request({
-    url: '/api/backend/user/bd-update',
+    url: '/backend/user/bd-update',
     method: 'post',
     data
   })
@@ -117,7 +117,7 @@ export function bdUpdate(data: { userId: string; opType: number }) {
 // Prohibit user
 export function prohibitUser(data: { userId: string; prohibitTime: number }) {
   return request({
-    url: '/api/backend/user/prohibitUser',
+    url: '/backend/user/prohibitUser',
     method: 'post',
     data
   })
@@ -126,7 +126,7 @@ export function prohibitUser(data: { userId: string; prohibitTime: number }) {
 // Relieve user
 export function relieveUser(data: { userId: string }) {
   return request({
-    url: '/api/backend/user/relieveUser',
+    url: '/backend/user/relieveUser',
     method: 'post',
     data
   })
@@ -135,7 +135,7 @@ export function relieveUser(data: { userId: string }) {
 // Prohibit device
 export function prohibitDevice(data: { deviceId: string; prohibitTime: number }) {
   return request({
-    url: '/api/backend/user/prohibitDevice',
+    url: '/backend/user/prohibitDevice',
     method: 'post',
     data
   })
@@ -144,7 +144,7 @@ export function prohibitDevice(data: { deviceId: string; prohibitTime: number })
 // Relieve device
 export function relieveDevice(data: { deviceId: string }) {
   return request({
-    url: '/api/backend/user/relieveDevice',
+    url: '/backend/user/relieveDevice',
     method: 'post',
     data
   })
@@ -153,7 +153,7 @@ export function relieveDevice(data: { deviceId: string }) {
 // Get client log list
 export function getClientLogList(data: { pageNo: number; pageSize: number; userId?: string }) {
   return request({
-    url: '/api/backend/user/client-log-list',
+    url: '/backend/user/client-log-list',
     method: 'post',
     data
   })

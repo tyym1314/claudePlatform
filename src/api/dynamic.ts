@@ -12,7 +12,7 @@ export function getDynamicList(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/dynamic/getDynamicList',
+    url: '/business/backend/dynamic/getDynamicList',
     method: 'post',
     data
   })
@@ -21,7 +21,7 @@ export function getDynamicList(data: {
 // Get dynamic detail
 export function getDynamicDetail(params: { dynamicId: number }) {
   return request({
-    url: '/api/business/backend/dynamic/getDynamicDetail',
+    url: '/business/backend/dynamic/getDynamicDetail',
     method: 'get',
     params
   })
@@ -30,7 +30,7 @@ export function getDynamicDetail(params: { dynamicId: number }) {
 // Delete dynamic
 export function deleteDynamic(data: { dynamicId: number }) {
   return request({
-    url: '/api/business/backend/dynamic/deleteDynamic',
+    url: '/business/backend/dynamic/deleteDynamic',
     method: 'post',
     data
   })
@@ -44,7 +44,7 @@ export function getPinnedDynamicList(data: {
   pageSize: number
 }) {
   return request({
-    url: '/api/business/backend/dynamic/getPinnedDynamicList',
+    url: '/business/backend/dynamic/getPinnedDynamicList',
     method: 'post',
     data
   })
@@ -58,7 +58,7 @@ export function pinDynamic(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/dynamic/pinDynamic',
+    url: '/business/backend/dynamic/pinDynamic',
     method: 'post',
     data
   })
@@ -67,7 +67,7 @@ export function pinDynamic(data: {
 // Unpin dynamic
 export function unpinDynamic(data: { id: number }) {
   return request({
-    url: '/api/business/backend/dynamic/unpinDynamic',
+    url: '/business/backend/dynamic/unpinDynamic',
     method: 'post',
     data
   })
@@ -81,7 +81,7 @@ export function updatePinnedDynamic(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/dynamic/updatePinnedDynamic',
+    url: '/business/backend/dynamic/updatePinnedDynamic',
     method: 'post',
     data
   })
@@ -95,7 +95,7 @@ export function getExploreRecommendList(data: {
   pageSize: number
 }) {
   return request({
-    url: '/api/business/backend/explore/getRecommendList',
+    url: '/business/backend/explore/getRecommendList',
     method: 'post',
     data
   })
@@ -110,7 +110,7 @@ export function addExploreRecommend(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/explore/addRecommend',
+    url: '/business/backend/explore/addRecommend',
     method: 'post',
     data
   })
@@ -126,7 +126,7 @@ export function updateExploreRecommend(data: {
   endTime?: string
 }) {
   return request({
-    url: '/api/business/backend/explore/updateRecommend',
+    url: '/business/backend/explore/updateRecommend',
     method: 'post',
     data
   })
@@ -135,7 +135,7 @@ export function updateExploreRecommend(data: {
 // Delete explore recommendation
 export function deleteExploreRecommend(data: { id: number }) {
   return request({
-    url: '/api/business/backend/explore/deleteRecommend',
+    url: '/business/backend/explore/deleteRecommend',
     method: 'post',
     data
   })
@@ -147,7 +147,7 @@ export function setExploreRecommendStatus(data: {
   status: number
 }) {
   return request({
-    url: '/api/business/backend/explore/setRecommendStatus',
+    url: '/business/backend/explore/setRecommendStatus',
     method: 'post',
     data
   })
@@ -159,7 +159,7 @@ export function getTargetInfo(params: {
   targetId: number
 }) {
   return request({
-    url: '/api/business/backend/explore/getTargetInfo',
+    url: '/business/backend/explore/getTargetInfo',
     method: 'get',
     params
   })
