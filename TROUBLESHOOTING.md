@@ -98,6 +98,41 @@ url: '/api/backend/sysUser/login'
 /java/api/api/backend/sysUser/login
 ```
 
+代理后的完整URL：
+```
+https://similar-dev.zykjnow.com/halla-operation-manager-platform/java/api/api/backend/sysUser/login
+```
+
+### 检查5: 如果仍然是404错误
+
+可能需要调整API路径配置。有两种可能的方案：
+
+**方案A：修改 src/utils/request.ts 的 baseURL**
+```typescript
+// 将 baseURL 从 '/java/api' 改为 '/api'
+baseURL: '/api'
+```
+
+同时修改 vite.config.ts 的代理配置：
+```typescript
+proxy: {
+  '/api': {
+    target: 'https://similar-dev.zykjnow.com',
+    changeOrigin: true,
+    secure: false,
+    rewrite: (path) => path.replace(/^\/api/, '/halla-operation-manager-platform/api')
+  }
+}
+```
+
+**方案B：保持当前配置，确认后端路径**
+当前配置代理路径为：
+```
+https://similar-dev.zykjnow.com/halla-operation-manager-platform/java/api/api/backend/sysUser/login
+```
+
+如果这个路径不对，请联系后端开发人员确认正确的API路径。
+
 ## 常见错误及解决方案
 
 ### 错误1: net::ERR_FILE_NOT_FOUND

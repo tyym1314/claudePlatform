@@ -15,7 +15,7 @@ export interface ApiResponse<T = any> {
 
 // Create axios instance
 const service: AxiosInstance = axios.create({
-  baseURL: '/java/api',
+  baseURL: '/java',
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json'

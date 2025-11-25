@@ -17,7 +17,7 @@ export default defineConfig({
         target: 'https://similar-dev.zykjnow.com',
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace(/^\/java\/api/, '/java/api')
+        rewrite: (path) => path.replace(/^\/java\/api/, '/halla-operation-manager-platform/java/api')
       }
     }
   }
