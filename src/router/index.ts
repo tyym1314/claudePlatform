@@ -79,6 +79,30 @@ const routes: RouteRecordRaw[] = [
         name: 'SalaryRecord',
         component: () => import('@/views/guild/SalaryRecord.vue'),
         meta: { title: '工资发放记录' }
+      },
+      {
+        path: 'dynamic/pinned',
+        name: 'PinnedDynamic',
+        component: () => import('@/views/dynamic/PinnedDynamic.vue'),
+        meta: { title: '置顶动态管理' }
+      },
+      {
+        path: 'dynamic/explore-recommend',
+        name: 'ExploreRecommend',
+        component: () => import('@/views/dynamic/ExploreRecommend.vue'),
+        meta: { title: '探索推荐位配置' }
+      },
+      {
+        path: 'room/manage',
+        name: 'RoomManage',
+        component: () => import('@/views/room/RoomManage.vue'),
+        meta: { title: '房间管理' }
+      },
+      {
+        path: 'room/statistics',
+        name: 'RoomStatistics',
+        component: () => import('@/views/room/RoomStatistics.vue'),
+        meta: { title: '房间数据统计' }
       }
     ]
   },
