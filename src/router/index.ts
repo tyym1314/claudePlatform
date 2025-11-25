@@ -103,6 +103,42 @@ const routes: RouteRecordRaw[] = [
         name: 'RoomStatistics',
         component: () => import('@/views/room/RoomStatistics.vue'),
         meta: { title: '房间数据统计' }
+      },
+      {
+        path: 'user/flow',
+        name: 'UserFlow',
+        component: () => import('@/views/user/UserFlow.vue'),
+        meta: { title: '用户流水查询' }
+      },
+      {
+        path: 'user/ban',
+        name: 'UserBan',
+        component: () => import('@/views/user/UserBan.vue'),
+        meta: { title: '用户封禁管理' }
+      },
+      {
+        path: 'user/client-log',
+        name: 'ClientLog',
+        component: () => import('@/views/user/ClientLog.vue'),
+        meta: { title: '客户端日志查询' }
+      },
+      {
+        path: 'content/gift-wall',
+        name: 'GiftWall',
+        component: () => import('@/views/content/GiftWall.vue'),
+        meta: { title: '礼物墙配置' }
+      },
+      {
+        path: 'content/tag',
+        name: 'TagManage',
+        component: () => import('@/views/content/TagManage.vue'),
+        meta: { title: '标签管理' }
+      },
+      {
+        path: 'content/topic',
+        name: 'TopicManage',
+        component: () => import('@/views/content/TopicManage.vue'),
+        meta: { title: '话题管理' }
       }
     ]
   },
