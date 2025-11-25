@@ -61,6 +61,24 @@ const routes: RouteRecordRaw[] = [
         name: 'Gift',
         component: () => import('@/views/activity/Gift.vue'),
         meta: { title: '礼物配置' }
+      },
+      {
+        path: 'activity/recharge-package',
+        name: 'RechargePackage',
+        component: () => import('@/views/activity/RechargePackage.vue'),
+        meta: { title: '充值礼包配置' }
+      },
+      {
+        path: 'guild/auto-salary',
+        name: 'AutoSalary',
+        component: () => import('@/views/guild/AutoSalary.vue'),
+        meta: { title: '自动发薪配置' }
+      },
+      {
+        path: 'guild/salary-record',
+        name: 'SalaryRecord',
+        component: () => import('@/views/guild/SalaryRecord.vue'),
+        meta: { title: '工资发放记录' }
       }
     ]
   },
