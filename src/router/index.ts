@@ -31,6 +31,36 @@ const routes: RouteRecordRaw[] = [
         name: 'WithdrawalExamine',
         component: () => import('@/views/withdrawal/WithdrawalExamine.vue'),
         meta: { title: '提现审核' }
+      },
+      {
+        path: 'system/user',
+        name: 'SysUser',
+        component: () => import('@/views/system/SysUser.vue'),
+        meta: { title: '系统用户管理' }
+      },
+      {
+        path: 'system/role',
+        name: 'Role',
+        component: () => import('@/views/system/Role.vue'),
+        meta: { title: '角色管理' }
+      },
+      {
+        path: 'system/menu',
+        name: 'Menu',
+        component: () => import('@/views/system/Menu.vue'),
+        meta: { title: '菜单管理' }
+      },
+      {
+        path: 'activity/banner',
+        name: 'Banner',
+        component: () => import('@/views/activity/Banner.vue'),
+        meta: { title: 'Banner配置' }
+      },
+      {
+        path: 'activity/gift',
+        name: 'Gift',
+        component: () => import('@/views/activity/Gift.vue'),
+        meta: { title: '礼物配置' }
       }
     ]
   },
