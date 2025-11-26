@@ -29,6 +29,19 @@ service.interceptors.request.use(
     if (userStore.token) {
       config.headers['Authorization'] = `Bearer ${userStore.token}`
     }
+
+    // Add required headers for all requests
+    config.headers['deviceid'] = 'AABBCC'
+    config.headers['appversion'] = '1.0.0'
+
+    // Debug: log request config
+    console.log('Request config:', {
+      url: config.url,
+      method: config.method,
+      headers: config.headers,
+      data: config.data
+    })
+
     return config
   },
   (error: AxiosError) => {
