@@ -3,7 +3,7 @@
 export interface LoginParams {
   username: string
   password: string
-  device: string
+  deviceId: string
 }
 
 export interface UserInfo {

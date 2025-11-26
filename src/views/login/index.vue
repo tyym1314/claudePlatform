@@ -90,7 +90,7 @@ const getDeviceId = () => {
 const loginForm = reactive<LoginParams>({
   username: '',
   password: '',
-  device: getDeviceId()
+  deviceId: getDeviceId()
 })
 
 const rules = {
@@ -101,6 +101,18 @@ const rules = {
 const handleLogin = async () => {
   try {
     loading.value = true
+
+    // Ensure device is set
+    if (!loginForm.deviceId) {
+      loginForm.deviceId = getDeviceId()
+    }
+
+    // Debug: log the login data
+    console.log('Login request data:', {
+      username: loginForm.username,
+      password: '***',
+      deviceId: loginForm.deviceId
+    })
 
     // Login
     const res = await login(loginForm)
