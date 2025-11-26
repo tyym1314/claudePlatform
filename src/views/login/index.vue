@@ -65,32 +65,9 @@ const userStore = useUserStore()
 
 const loading = ref(false)
 
-// Generate device identifier for web platform
-const getDeviceId = () => {
-  let deviceId = localStorage.getItem('deviceId')
-  if (!deviceId) {
-    // Generate a unique device ID based on browser info
-    const nav = navigator
-    const screen = window.screen
-    const guid = 'web_' + Date.now() + '_' + Math.random().toString(36).substring(2, 15)
-    deviceId = btoa(
-      [
-        nav.userAgent,
-        nav.language,
-        screen.height,
-        screen.width,
-        guid
-      ].join('|')
-    ).substring(0, 32)
-    localStorage.setItem('deviceId', deviceId)
-  }
-  return deviceId
-}
-
 const loginForm = reactive<LoginParams>({
   username: '',
-  password: '',
-  deviceId: getDeviceId()
+  password: ''
 })
 
 const rules = {
@@ -102,16 +79,10 @@ const handleLogin = async () => {
   try {
     loading.value = true
 
-    // Ensure device is set
-    if (!loginForm.deviceId) {
-      loginForm.deviceId = getDeviceId()
-    }
-
     // Debug: log the login data
     console.log('Login request data:', {
       username: loginForm.username,
-      password: '***',
-      deviceId: loginForm.deviceId
+      password: '***'
     })
 
     // Login

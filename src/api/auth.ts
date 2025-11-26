@@ -6,7 +6,11 @@ export function login(data: LoginParams) {
   return request({
     url: '/business/platform/login/login',
     method: 'post',
-    data
+    data,
+    headers: {
+      'deviceid': 'AABBCC',
+      'appversion': '1.0.0'
+    }
   })
 }
 
