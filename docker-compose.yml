@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  chatna-admin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatna-admin
+    ports:
+      - "80:80"
+    environment:
+      - BACKEND_API_URL=http://backend:8080  # 修改为你的后端API地址
+    restart: unless-stopped
+    networks:
+      - chatna-network
+
+  # 如果你的后端也使用 Docker，可以在这里配置
+  # backend:
+  #   image: your-backend-image:latest
+  #   container_name: chatna-backend
+  #   ports:
+  #     - "8080:8080"
+  #   restart: unless-stopped
+  #   networks:
+  #     - chatna-network
+
+networks:
+  chatna-network:
+    driver: bridge
